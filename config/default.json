@@ -1,1 +1,4 @@
-no longer exists here...
+{
+    "mongoURI": "mongodb+srv://dwelsh1:Toby!247@cluster0.pvnunhg.mongodb.net/?retryWrites=true&w=majority", 
+    "jwtSecret": "mysecrettoken"
+}
