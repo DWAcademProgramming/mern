@@ -101,7 +101,7 @@ router.post('/', [
         console.error(err.message); 
         res.status(500).send('Server error')
       }
-    });
+});
     // @route GET api/profile
     // @desc Test route
     // @ access
@@ -209,7 +209,7 @@ router.post('/', [
                 res.status(500).send('Server Error'); 
             }
         }
-    )
+    ); 
 
     // @route Delete api/profile/user/:experience_id
     // @desc Delete expereience by user ID
@@ -303,6 +303,6 @@ router.get('/github/:username', (req, res) =>{
         console.error(error);
         return res.status(500).json({ msg: 'Server error' });
     }
-})
+});
 
 module.exports = router; 
