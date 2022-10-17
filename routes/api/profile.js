@@ -139,11 +139,10 @@ router.post('/', [
     // @ access Private
     router.get('/', async(req, res)=>{
         try{
-            // @todo remove user posts
-
+            // Remove user posts
+            await Post.deleteMany({ user: req.user.id}); 
             // Remove Profile
             await Profile.findOneAndRemove({ user: req.user.id}); 
-
             // Remove user
             await User.findOneAndRemove({ _id: req.user.id}); 
 
